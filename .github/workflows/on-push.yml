@@ -1,0 +1,11 @@
+name: Runs Every Main push
+on:
+  push:
+    branches:
+      - main
+jobs:
+  main-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Announce Merge Successful"
+        run: echo "Changes merged to main"
